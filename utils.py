@@ -1,9 +1,8 @@
-import geo.utils as utils
+# geo/utils.py
+import math
 
-a, b = 3, 4
-c = utils.hypotenuse(a, b)  
-print('c =', c)
+def hypotenuse(a, b):
+    return math.sqrt(a**2 + b**2)
 
-r = 10
-area = utils.circle_area(r)  
-print('area =', area)
+def circle_area(r):
+    return math.pi * r**2
