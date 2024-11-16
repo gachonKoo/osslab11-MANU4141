@@ -1,11 +1,11 @@
-import geo.utils as utils
+import math
 
 # calculate the length of hypotenuse(c) when a=3 and b=4
 a, b = 3, 4
-c = utils.hypotenuse(a, b)  # geo.utils에 hypotenuse 함수가 있다고 가정
+c = math.sqrt(a**2 + b**2)  # 피타고라스 정리
 print('c =', c)
 
 # calculate the area of circle with radius r = 10
 r = 10
-area = utils.circle_area(r)  # geo.utils에 circle_area 함수가 있다고 가정
+area = math.pi * r**2  # 원 넓이 공식
 print('area =', area)
